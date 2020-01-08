@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: popLight;
+  src: url(./fonts/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: popRegular;
+  src: url(./fonts/Poppins/Poppins-Regular.ttf);
+}
+
+body {
+  font-family: popLight;
+}
+
+.portfolio {
+  color: aliceblue;
+  background: radial-gradient(rgba(27, 38, 44, 1), rgba(27, 27, 27, 1));
+}
+
+nav {
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.logo {
+  min-height: 50vh;
+  justify-content: space-around;
+}
+
+.hero {
+  /* color: green; */
+  text-align: center;
+}
+
+.hero img {
+  height: 500px;
+  transition: transform 0.3s ease-out;
+  cursor: pointer;
+}
+
+model .details {
+  grid-column: 2/3;
+  align-self: end;
+}

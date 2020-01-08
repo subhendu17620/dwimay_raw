@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <g id="Hamburger" transform="translate(-1561 -61)">
+    <g id="Circle" transform="translate(1561 61)" fill="#fff" stroke="#707070" stroke-width="1">
+      <circle cx="60" cy="60" r="60" stroke="none"/>
+      <circle cx="60" cy="60" r="59.5" fill="none"/>
+    </g>
+    <g id="Group_4" data-name="Group 4">
+      <line id="Line_bottom_" data-name="Line(bottom)" x2="53" transform="translate(1594.5 110.5)" fill="none" stroke="#707070" stroke-width="4"/>
+      <line id="Line_top_" data-name="Line(top)" x2="52" transform="translate(1595.5 134.5)" fill="none" stroke="#707070" stroke-width="4"/>
+    </g>
+  </g>
+</svg>

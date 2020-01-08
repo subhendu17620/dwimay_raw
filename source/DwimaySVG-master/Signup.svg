@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="94" height="249" viewBox="0 0 94 249">
+  <g id="Signup" transform="translate(1 -84)" opacity="0.54">
+    <rect id="Rectangle" width="94" height="249" transform="translate(-1 84)" fill="#fff"/>
+    <g id="Signup_Text" data-name="Signup Text">
+      <text id="S." transform="translate(16 148)" fill="#1b1b1b" font-size="50" font-family="PTMono-Regular, PT Mono"><tspan x="0" y="0">S.</tspan></text>
+      <text id="Signup-2" data-name="Signup" transform="translate(52.5 304.5) rotate(-90)" fill="#1b1b1b" font-size="30" font-family="PTMono-Regular, PT Mono" letter-spacing="0.1em"><tspan x="0" y="0">Signup</tspan></text>
+    </g>
+  </g>
+</svg>
