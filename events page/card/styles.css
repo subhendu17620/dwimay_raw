@@ -112,9 +112,7 @@ body {
   transform: rotateY(-180deg);
   padding: 0 2em;
 }
-.back .button {
-  background: linear-gradient(135deg, #1a9be6, #1a57e6);
-}
+
 .back .button:before {
   box-shadow: 0 0 10px 10px rgba(26, 87, 230, 0.25);
   background-color: rgba(26, 87, 230, 0.25);
@@ -125,13 +123,7 @@ body {
 .card:nth-child(even) .back {
   transform: rotateY(180deg);
 }
-.card:nth-child(even) .back .button {
-  background: linear-gradient(135deg, #e61a80, #e61a3c);
-}
-.card:nth-child(even) .back .button:before {
-  box-shadow: 0 0 10px 10px rgba(230, 26, 60, 0.25);
-  background-color: rgba(230, 26, 60, 0.25);
-}
+
 .card:nth-child(even):hover .back {
   transform: rotateY(0deg);
 }
