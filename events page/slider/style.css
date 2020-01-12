@@ -135,9 +135,7 @@ h3 {
   }
 }
 @media (max-width: 575px) {
-  h3,
-  .h3 {
-    font-size: 22px;
-    line-height: 30px;
+  img {
+    size: 70%;
   }
 }
