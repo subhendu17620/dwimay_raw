@@ -222,7 +222,10 @@
     { background: true },
     () => document.body.classList.remove("loading")
   );
-  
+
+  // document.getElementsByInnerhtml("H1")[0].setAttribute("href", "https://fb.com");
+
+  var element = document.getElementsByClassName("content__text--full");
+  // element.innerHTML = "New Heading";
+  console.log(element);
 }
-
-
