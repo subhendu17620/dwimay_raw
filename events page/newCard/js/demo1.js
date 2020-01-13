@@ -186,6 +186,7 @@
 
       // Upcoming slide
       const upcomingSlide = this.slides[this.current];
+      curDept = this.current;
 
       const onCurrentHalfwayCallback = () => {
         // Hide the current slide's image
@@ -225,7 +226,24 @@
 
   // document.getElementsByInnerhtml("H1")[0].setAttribute("href", "https://fb.com");
 
-  var element = document.getElementsByClassName("content__text--full");
+  // var element = document.getElementsByClassName("content__text--full");
   // element.innerHTML = "New Heading";
-  console.log(element);
+  // console.log(element);
 }
+
+var dept_name = [];
+var curDept = 0;
+var openBtn = document.getElementById("open-btn");
+let depts = document.querySelectorAll("#dept-link");
+for (let i = 0; i < depts.length; i++) {
+  dept_name.push(depts[i].innerHTML);
+}
+openBtn.addEventListener("click", function(event) {
+  event.preventDefault;
+  console.log(dept_name[curDept].toLowerCase());
+  openBtn.href = "js/" + dept_name[curDept] + ".html";
+});
+// var prevBtn = document.getElementById("prev-btn");
+// prevBtn.addEventListener("click", function() {});
+// var nextBtn = document.getElementById("next-btn");
+// nextBtn.addEventListener("click", function() {});
