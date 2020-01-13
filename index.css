@@ -1,57 +1,87 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  /* box-sizing: border-box; */
+  max-height: 100%;
 }
 
 @font-face {
-  font-family: popLight;
-  src: url(./fonts/Poppins/Poppins-Light.ttf);
+  font-family: rajdhaniRegular;
+  src: url(./fonts/Rajdhani/Rajdhani-Medium.ttf);
 }
 
 @font-face {
-  font-family: popRegular;
-  src: url(./fonts/Poppins/Poppins-Regular.ttf);
+  font-family: rajdhaniBold;
+  src: url(./fonts/Rajdhani/Rajdhani-Bold.ttf);
 }
 
 body {
-  font-family: popLight;
-}
-
-.portfolio {
-  color: aliceblue;
+  font-family: rajdhaniRegular;
   background: radial-gradient(rgba(27, 38, 44, 1), rgba(27, 27, 27, 1));
 }
 
+.portfolio {
+  color: rgb(251, 255, 252);
+}
+
 nav {
-  min-height: 10vh;
-  width: 90%;
-  margin: auto;
+  display: grid;
+}
+
+.parent1 {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 0px;
 }
 
 .logo {
-  min-height: 50vh;
+  min-height: 10vh;
   justify-content: space-around;
 }
 
-.hero {
-  /* color: green; */
+.parent2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.child1 {
+  flex-grow: 3;
+  justify-content: space-between;
+  align-self: center;
   text-align: center;
+  font-size: 2em;
 }
 
-.hero img {
-  height: 500px;
-  transition: transform 0.3s ease-out;
-  cursor: pointer;
+.child1 h3 {
+  text-decoration: underline;
 }
 
-model .details {
+#decadelogo {
+  height: 70vh;
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  background-position-x: right;
+}
+
+#decadelogo tspan {
+  stroke-dasharray: 700px;
+  stroke-dashoffset: 700px;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+
+.subtitle .details {
   grid-column: 2/3;
   align-self: end;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .child1 {
+    font-size: 1em;
+  }
 }
