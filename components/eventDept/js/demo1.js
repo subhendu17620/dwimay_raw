@@ -240,7 +240,7 @@ for (let i = 0; i < depts.length; i++) {
 }
 openBtn.addEventListener("click", function(event) {
   event.preventDefault;
-  console.log(dept_name[curDept].toLowerCase());
+  // console.log(dept_name[curDept].toLowerCase());
   openBtn.href = "js/" + dept_name[curDept] + ".html";
 });
 // var prevBtn = document.getElementById("prev-btn");
