@@ -246,11 +246,15 @@ a:focus {
   position: relative;
   z-index: 1000;
 }
-
+.frame__title-wrap {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  justify-self: center;
+}
 .frame__title {
   font-size: 1rem;
   margin: 0 0 1rem;
-  font-weight: normal;
 }
 
 .frame__links {
