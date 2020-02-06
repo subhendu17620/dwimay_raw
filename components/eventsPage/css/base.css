@@ -1,25 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Kanit:900");
 *,
 *::after,
 *::before {
   box-sizing: border-box;
 }
-
 :root {
   font-size: 16px;
+  
+  /* --color-link: #000; */
+  /* --color-link-hover: #dc6e25;*/
 }
 
 body {
   margin: 0;
-  /* --color-text: #dc6e25; */
-  /* --color-bg: #efded3; */
-  /* --color-link: #000; */
-  /* --color-link-hover: #dc6e25; */
+  
   --aspect-ratio: 1/1.5;
   --imgwidthmax: 500px;
   --size-title: 10rem;
   --font-weight-title: 400;
   color: var(--color-text);
-  background-color: var(--color-bg);
+  background-color: #272727;
   font-family: turquoise, serif;
   font-size: 1.5rem;
   -webkit-font-smoothing: antialiased;
@@ -96,8 +96,8 @@ a:focus {
 .page__title {
   grid-area: header;
   margin: 0 0 1rem;
-  font-size: inherit;
-  font-weight: 400;
+  /* font-size: inherit; */
+  /* font-weight: 400; */
 }
 
 .credits {
@@ -287,6 +287,35 @@ a:focus {
   left: -28vw;
 }
 
+/********** Title shadow, 3d effect **********/
+h1 {
+  color: #FFF;
+  font-family: "Kanit";
+  font-size: 60px;
+  line-height: 1em;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-shadow: 0 1px 0 #06010a, 0 2px 0 #010001, 0 3px 0 black, 0 4px 0 black, 0 5px 0 black, 0 6px 0 black, 0 7px 0 black, 0 8px 0 black, 0 0 5px rgba(1, 0, 1, 0.05), 0 -1px 3px rgba(1, 0, 1, 0.2), 0 9px 9px rgba(1, 0, 1, 0.5), 0 12px 12px rgba(1, 0, 1, 0.5), 0 15px 15px rgba(1, 0, 1, 0.5);
+}
+
+h2 {
+  color: #FFF;
+  font-family: "Kanit";
+  font-size: 60px;
+  line-height: 1em;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  /* top: 50%; */
+  transform: translateY(-50%);
+  width: 100%;
+  text-shadow: 0 1px 0 #06010a, 0 2px 0 #010001, 0 3px 0 black, 0 4px 0 black, 0 5px 0 black, 0 6px 0 black, 0 7px 0 black, 0 8px 0 black, 0 0 5px rgba(1, 0, 1, 0.05), 0 -1px 3px rgba(1, 0, 1, 0.2), 0 9px 9px rgba(1, 0, 1, 0.5), 0 12px 12px rgba(1, 0, 1, 0.5), 0 15px 15px rgba(1, 0, 1, 0.5);
+}
+
 .content__item-title {
   position: relative;
   font-size: var(--size-title);
@@ -312,6 +341,17 @@ a:focus {
   grid-area: 1 / 1 / 2 / 3;
   width: 100%;
   text-align: center;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding-top: 75px;
+  /* background: #ccc; */
+  text-align: center;
+  color: #FFF;
+  font-size: 3em;
 }
 
 .content__item-description {

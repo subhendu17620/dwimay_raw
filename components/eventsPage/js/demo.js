@@ -261,4 +261,5 @@
         // Initialize the Smooth Scrolling
         new SmoothScroll();
     });
+    
 }
